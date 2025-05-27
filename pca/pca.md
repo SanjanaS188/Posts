@@ -99,8 +99,8 @@ Scanpy stores PCA results directly in the AnnData object:
 ### A Note About PC1
 
 In the PC1 vs PC2 plot for the PBMC dataset, we observe that **PC1 appears to reflect technical variation**. When colored by `n_counts`, `n_genes_by_counts`, and `percent_mito`, we notice:
-![Explained PC1 vs PC2](pca/images/pc1vspc2.png)
-![Explained](pca/images/pca_based_qc.png)
+![Explained PC1 vs PC2](images/pc1vspc2.png)
+![Explained](images/pca_based_qc.png)
 One outlier cell with **very high `n_counts`**, but **low gene diversity and low mitochondrial content**.
 
 This suggests PC1 might be dominated by **technical factors** (like a few genes expressed at very high levels) rather than biological identity. So:  
@@ -124,7 +124,7 @@ This generates a **variance ratio plot**, where:
 - Look for the **“elbow”**: where the variance drops off
     
 - For this dataset, around **10 PCs** appear to carry most of the meaningful variation
-![Explained variance plot](pca/images/variance_ratio.png)
+![Explained variance plot](images/variance_ratio.png)
 
 
 PCA is one of those magical tools that make messy, high-dimensional biological data understandable.
